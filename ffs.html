@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<head>
+  <title>Salman Ahmed</title>
+  <style>
+    body {
+      text-align: center;
+      background: url("http://papers.co/wallpaper/papers.co-nf44-sunset-sea-sky-ocean-summer-blue-water-nature-29-wallpaper.jpg");
+      background-size: cover;
+      background-position: center;
+      color: black;
+      font-family: garamond;
+    }
+    p {
+      font-size: 22px;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: silver;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://www.trybooking.com/media/3446/login-user-icon.png">
+  <p id ="heythere"></p>
+  <input type="email" id ="technology">
+  <input type="submit" onclick="submit()">
+  <script>
+  futuristic=document.getElementById("technology")
+  prompts = {
+    Platform:"Do prefer play Board games or Electronic games",
+    Board:"There are many board games in the world, but the Monopoly and Jenga is the most popular ones. Which one do you prefer to play",
+    Electronic:"Do you prefer to play on a PC or on a Console",
+	  Console:"Would rather game on a Playstation or on a Xbox",
+	  PC:"Would you rather game on a Alienware PC or on a HP",
+}
+games=document.getElementById("technology")
+ function submit() {
+   if (games.value=="board") {
+    //alert ("futuristic")
+    futuristic.innerHTML=prompts.Board
+    games. value=""
+   }
+   if (games.value=="electronic") {
+    futuristic.innerHTML=prompts.Electronic
+    games.value=""
+   }
+   if (games.value=="pc") {
+    futuristic.innerHTML=prompts.PC
+    games.value=""
+   }
+   if (games.valu =="console" {
+    futuristic.innerHTML=prompts.Console
+    games.value=""
+   }  
+}
+ <!DOCTYPE html>
+<head>
+  <title>Imani Jumpp</title>
+  <style>
+    body {
+      text-align: center;
+      background: url("https://thirstyroots.com/wp-content/uploads/2015/07/24-curly-hair-black-art.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: 'Spicy Rice', cursive;
+    }
+    p {
+      font-size: 22px;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: black;
+      color: blue;
+    
+    }
+  </style>
+</head>
+<body id="back">
+  <img src="https://pngimage.net/wp-content/uploads/2018/06/girl-art-png-6.png" id="whatever" style="width:20%">
+
+  
+  <p id = "god"></p>
+  <input   id = "dog">
+  <input type="submit" onclick = "submit()" id="but">
+<script>
+
+  receipt = [ ]
+
+  prompts = {
+    text:"Do you want to call or email us ?",
+    call:"1-800-bye-bye Also would you rather shampoo or conditioner ?",
+    email:"byehaha@gmail.com Email us ! Also would you rather shampoo or conditoner",
+    shampoo:"Also What type of hair style would you like curly or straight?",
+    conditioner: "Also What type of hair style would you like curly or straight ?",
+    curly:"Air dry or Difffuser ?" ,
+    airdry:"Okay thanks for shopping with us",
+    diffuser:"Okay thanks for shopping with us",
+    straight: "flat iron or silk press?",
+    flatiron:"Okay thanks for shopping with us",
+    silkpress:"Okay thanks for shopping with us",
+   
+    
+  }
+
+  kel = document.getElementById("dog")
+  bel = document.getElementById("god")
+  back = document.getElementById("back")
+  
+  function submit() {
+    if (kel.value == "call") { 
+      //alert("submit")
+      bel.innerHTML= prompts.call
+		bel.style.color = "green"
+      kel.value = ""
+      back.style.background = "url(https://cdn.iconscout.com/icon/free/png-256/call-447-475007.png)"
+      whatever.src="https://cdn4.iconfinder.com/data/icons/social-media-2097/94/phone-512.png"
+      receipt.push("call")
+    }
+    if (kel.value =="email") {
+      bel.innerHTML= prompts.email
+		bel.style.color = "blue"
+      kel.value = ""
+	  back.style.background = "url(https://image.flaticon.com/icons/png/512/27/27630.png)"
+      whatever.src="https://cdn5.vectorstock.com/i/1000x1000/99/74/email-icon-isolated-on-white-background-vector-19239974.jpg"
+       receipt.push("email")
+    }
+    if (kel.value =="shampoo") {
+      bel.innerHTML= prompts.shampoo
+		bel.style.color = "black"
+      kel.value = ""
+      back.style.background = "url(https://cdn2.vectorstock.com/i/1000x1000/93/11/the-shampoo-icon-washing-symbol-flat-vector-5469311.jpg)" 	  
+	  whatever.src="https://previews.123rf.com/images/vladvm/vladvm1507/vladvm150700567/42213322-the-shampoo-icon-washing-symbol-flat-vector-illustration.jpg"
+      receipt.push("shampoo")
+    }
+    if (kel.value =="conditioner") {
+      bel.innerHTML= prompts.conditioner
+      kel.value = ""
+	  back.style.background = "url(https://image.flaticon.com/icons/png/512/390/390508.png)"
+      whatever.src="https://st2.depositphotos.com/5532432/9934/v/950/depositphotos_99345230-stock-illustration-hair-conditioner-vector-icon.jpg"
+      receipt.push("conditioner")
+    }
+     if (kel.value =="curly") {
+      bel.innerHTML= prompts.curly
+	  back.style.background = "url(https://i.pinimg.com/originals/ea/37/c0/ea37c03d244336a8154b8dc85de05166.jpg)"
+      whatever.src="https://www.beautyforever.com/media/catalog/product/cache/1/image/528x/040ec09b1e35df139433887a97daa66f/1/_/1_14_18.jpg"  
+	  receipt.push("curly")     
+    }
+    if (kel.value =="straight") {
+      bel.innerHTML= prompts.straight
+	  back.style.background = "url(https://cdn.shopify.com/s/files/1/1720/3725/products/straight-hair_6b4877fd-b465-48e8-aecb-1c51d8a9e8f1_620x.jpg?v=1538120534)"
+      whatever.src="https://cdn.shopify.com/s/files/1/2062/0667/products/IMG_8224.JPG?v=1499827990" 
+      receipt.push("straight")
+    }
+    if (kel.value =="airdry") {
+      bel.innerHTML= prompts.airdry
+		bel.style.color = "white"
+      kel.value = ""
+	  back.style.background = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNR_xbumCr0ge3r_I_A05EUPeLrqkdEhKfdpGUb3Z9hZIsptkV)"
+      whatever.src="https://images-na.ssl-images-amazon.com/images/I/51cweqq4GpL._SX355_.jpg"
+      receipt.push("airdry")
+    }
+    if (kel.value =="diffuser") {
+      bel.innerHTML= prompts.diffuser
+		bel.style.color = "grey"
+      kel.value = ""
+      back.style.background = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQogGFOCJxWdyIXWwnn6M9U9ka4jNG0R4bS6j9W7Gh5S_aY6nmR)" 
+	  whatever.src="https://diana-cdn.naturallycurly.com/Articles2.0/4cX3Uqw8f6a80kkeQcigEg/contentImages/b6907abeafbfc974ba26d7ae5d4c5540/rochelle-diffuse-700.jpg"
+      receipt.push("diffuser")
+    }
+    if (kel.value =="silkpress") {
+      bel.innerHTML= prompts.silkpress
+		bel.style.color = "white"
+      kel.value = ""
+	  back.style.background = "url(https://ebena.net/sites/default/files/2018-02/silkpress2.png)"
+      whatever.src="https://voiceofhair.com/wp-content/uploads/2018/06/30593001_373486279835135_3456992152616173568_n.jpg"
+      receipt.push("silkpress")
+    }
+      if (kel.value =="flatiron") {
+      bel.innerHTML= prompts.flatiron
+      kel.value = ""
+	  back.style.background = "url(https://image.dhgate.com/0x0/f2/albu/g7/M01/9A/51/rBVaSlusreWAXcMwAADrN9T7xMc387.jpg)"
+      whatever.src="https://ebena.net/sites/default/files/2018-02/IMAG0129_0.jpg"
+      receipt.push("flatiron")
+    }
+    if (receipt.length == 4) {
+   	 alert("contact: " + receipt[0] + "\n\product: " + receipt[1] + "\n\hair type: " + receipt[2] + "\n\style: " + receipt[3])
+	}
+  }
+  
+  bel.innerHTML= prompts.text
+  
+  kel.addEventListener("keyup", function(event) {
+    if (event.keyCode == 13) {
+      but.click()
+    }
+  })
+</script>
+</body>
+ futuristic.innerHTML=prompts.technology
+  
+</script>
+</body> 
+
+
+
+
+<!DOCTYPE html>
+<head>
+  <title>Salman Ahmed</title>
+  <style>
+    body {
+      text-align: center;
+      background: url("http://papers.co/wallpaper/papers.co-nf44-sunset-sea-sky-ocean-summer-blue-water-nature-29-wallpaper.jpg");
+      background-size: cover;
+      background-position: center;
+      color: black;
+      font-family: garamond;
+    }
+    p {
+      font-size: 22px;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: silver;
+      color: black;
+    }
+  </style>
+</head>
+<body id="back">
+  <img src="https://www.trybooking.com/media/3446/login-user-icon.png" id="whatever" style="width:20%">
+  <p id = "heythere"></p>
+  <input id = "technology">
+  <input type="submit" onclick = "submit()" id="but">
+<script>
+
+  receipt = [ ]
+
+  prompts = {
+    text:"Do you want to call or email us ?",
+    call:"1-800-bye-bye Also would you rather shampoo or conditioner ?",
+    email:"byehaha@gmail.com Email us ! Also would you rather shampoo or conditoner",
+    shampoo:"Also What type of hair style would you like curly or straight?",
+    conditioner: "Also What type of hair style would you like curly or straight ?",
+    curly:"Air dry or Difffuser ?" ,
+    airdry:"Okay thanks for shopping with us",
+    diffuser:"Okay thanks for shopping with us",
+    straight: "flat iron or silk press?",
+    flatiron:"Okay thanks for shopping with us",
+    silkpress:"Okay thanks for shopping with us",
+	  
+    text:"Do you want to call or email us ?",
+    call:"1-800-bye-bye Also would you rather shampoo or conditioner ?",
+    email:"byehaha@gmail.com Email us ! Also would you rather shampoo or conditoner",
+    shampoo:"Also What type of hair style would you like curly or straight?",
+    conditioner: "Also What type of hair style would you like curly or straight ?",
+    curly:"Air dry or Difffuser ?" ,
+    airdry:"Okay thanks for shopping with us",
+    diffuser:"Okay thanks for shopping with us",
+    straight: "flat iron or silk press?",
+    flatiron:"Okay thanks for shopping with us",
+    silkpress:"Okay thanks for shopping with us",
+   
+    
+  }
+
+  kel = document.getElementById("dog")
+  bel = document.getElementById("god")
+  back = document.getElementById("back")
+  
+  function submit() {
+    if (kel.value == "call") { 
+      //alert("submit")
+      bel.innerHTML= prompts.call
+		bel.style.color = "green"
+      kel.value = ""
+      back.style.background = "url(https://cdn.iconscout.com/icon/free/png-256/call-447-475007.png)"
+      whatever.src="https://cdn4.iconfinder.com/data/icons/social-media-2097/94/phone-512.png"
+      receipt.push("call")
+    }
+    if (kel.value =="email") {
+      bel.innerHTML= prompts.email
+		bel.style.color = "blue"
+      kel.value = ""
+	  back.style.background = "url(https://image.flaticon.com/icons/png/512/27/27630.png)"
+      whatever.src="https://cdn5.vectorstock.com/i/1000x1000/99/74/email-icon-isolated-on-white-background-vector-19239974.jpg"
+       receipt.push("email")
+    }
+    if (kel.value =="shampoo") {
+      bel.innerHTML= prompts.shampoo
+		bel.style.color = "black"
+      kel.value = ""
+      back.style.background = "url(https://cdn2.vectorstock.com/i/1000x1000/93/11/the-shampoo-icon-washing-symbol-flat-vector-5469311.jpg)" 	  
+	  whatever.src="https://previews.123rf.com/images/vladvm/vladvm1507/vladvm150700567/42213322-the-shampoo-icon-washing-symbol-flat-vector-illustration.jpg"
+      receipt.push("shampoo")
+    }
+    if (kel.value =="conditioner") {
+      bel.innerHTML= prompts.conditioner
+      kel.value = ""
+	  back.style.background = "url(https://image.flaticon.com/icons/png/512/390/390508.png)"
+      whatever.src="https://st2.depositphotos.com/5532432/9934/v/950/depositphotos_99345230-stock-illustration-hair-conditioner-vector-icon.jpg"
+      receipt.push("conditioner")
+    }
+     if (kel.value =="curly") {
+      bel.innerHTML= prompts.curly
+	  back.style.background = "url(https://i.pinimg.com/originals/ea/37/c0/ea37c03d244336a8154b8dc85de05166.jpg)"
+      whatever.src="https://www.beautyforever.com/media/catalog/product/cache/1/image/528x/040ec09b1e35df139433887a97daa66f/1/_/1_14_18.jpg"  
+	  receipt.push("curly")     
+    }
+    if (kel.value =="straight") {
+      bel.innerHTML= prompts.straight
+	  back.style.background = "url(https://cdn.shopify.com/s/files/1/1720/3725/products/straight-hair_6b4877fd-b465-48e8-aecb-1c51d8a9e8f1_620x.jpg?v=1538120534)"
+      whatever.src="https://cdn.shopify.com/s/files/1/2062/0667/products/IMG_8224.JPG?v=1499827990" 
+      receipt.push("straight")
+    }
+    if (kel.value =="airdry") {
+      bel.innerHTML= prompts.airdry
+		bel.style.color = "white"
+      kel.value = ""
+	  back.style.background = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNR_xbumCr0ge3r_I_A05EUPeLrqkdEhKfdpGUb3Z9hZIsptkV)"
+      whatever.src="https://images-na.ssl-images-amazon.com/images/I/51cweqq4GpL._SX355_.jpg"
+      receipt.push("airdry")
+    }
+    if (kel.value =="diffuser") {
+      bel.innerHTML= prompts.diffuser
+		bel.style.color = "grey"
+      kel.value = ""
+      back.style.background = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQogGFOCJxWdyIXWwnn6M9U9ka4jNG0R4bS6j9W7Gh5S_aY6nmR)" 
+	  whatever.src="https://diana-cdn.naturallycurly.com/Articles2.0/4cX3Uqw8f6a80kkeQcigEg/contentImages/b6907abeafbfc974ba26d7ae5d4c5540/rochelle-diffuse-700.jpg"
+      receipt.push("diffuser")
+    }
+    if (kel.value =="silkpress") {
+      bel.innerHTML= prompts.silkpress
+		bel.style.color = "white"
+      kel.value = ""
+	  back.style.background = "url(https://ebena.net/sites/default/files/2018-02/silkpress2.png)"
+      whatever.src="https://voiceofhair.com/wp-content/uploads/2018/06/30593001_373486279835135_3456992152616173568_n.jpg"
+      receipt.push("silkpress")
+    }
+      if (kel.value =="flatiron") {
+      bel.innerHTML= prompts.flatiron
+      kel.value = ""
+	  back.style.background = "url(https://image.dhgate.com/0x0/f2/albu/g7/M01/9A/51/rBVaSlusreWAXcMwAADrN9T7xMc387.jpg)"
+      whatever.src="https://ebena.net/sites/default/files/2018-02/IMAG0129_0.jpg"
+      receipt.push("flatiron")
+    }
+    if (receipt.length == 4) {
+   	 alert("contact: " + receipt[0] + "\n\product: " + receipt[1] + "\n\hair type: " + receipt[2] + "\n\style: " + receipt[3])
+	}
+  }
+  
+  bel.innerHTML= prompts.text
+  
+  kel.addEventListener("keyup", function(event) {
+    if (event.keyCode == 13) {
+      but.click()
+    }
+  })
+</script>
+</body>
